@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Mortgage Calculator</string>
+    <string name="action_settings">Settings</string>
+    <string name="buttonName">CALCULATE</string>
+    <string name="year30">30</string>
+    <string name="year15">15</string>
+    <string name="year7">7</string>
+    <string name="interestRate">7</string>
+    <string name="monthlyPayment">Monthly Payment:</string>
+</resources>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="1"
+    android:padding="15dp"
+  >
+
+    <TextView
+        android:layout_width="263dp"
+        android:layout_height="wrap_content"
+        android:text="Mortgage Calculator"
+        android:id="@+id/textView2"
+        android:layout_gravity="center_horizontal"
+        android:background="#34d8e7"
+        android:height="32dp"
+        android:padding="5dp"
+        android:textSize="19dp"
+        android:textAlignment="center"
+        android:textColor="#061265" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/amount"
+        android:layout_weight="0.05"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:hint="Enter Amount here eg: 10000" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/interestRate"
+        android:layout_weight="0.05"
+        android:hint="Enter interest rate default value : 7"
+        android:text="7" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="0.05"
+    android:baselineAligned="false">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:text="Loan term in year"
+        android:id="@+id/loanTerm"
+        android:layout_weight="0.01"
+        android:hint="Loan term in years" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.07"
+        android:orientation="horizontal"
+        android:id="@+id/radioGroup"
+        android:baselineAligned="true"
+        android:gravity="center_horizontal">
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="7"
+        android:id="@+id/radioButton4"
+        android:layout_weight="0.02"
+        android:hint="7" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="15"
+        android:id="@+id/radioButton5"
+        android:layout_gravity="right"
+        android:layout_weight="0.02"
+        android:hint="15" />
+
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="30"
+        android:id="@+id/radioButton6"
+        android:layout_gravity="right"
+        android:layout_weight="0.02"
+        android:hint="30"
+        android:checked="true" /></RadioGroup>
+
+</LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="0.05">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tax &amp; Insurance"
+        android:id="@+id/textView4"
+        android:layout_weight="0.01"
+        android:paddingTop="@dimen/activity_vertical_margin" />
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0.1%"
+        android:id="@+id/checkTax"
+        android:layout_alignTop="@+id/textView4"
+        android:layout_weight="0.05" />
+</LinearLayout>
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/buttonName"
+
+        android:id="@+id/calculate"
+        android:layout_weight="0.04"
+        android:layout_gravity="center"
+        android:textColor="#030f6e" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Monthly Payment:"
+        android:id="@+id/monthlyPayment"
+        android:layout_weight="0.05"
+        android:gravity="center"
+        android:layout_gravity="center"
+        />
+
+</LinearLayout>

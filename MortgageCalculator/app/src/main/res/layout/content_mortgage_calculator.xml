@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.priyanka.mortgagecalculator.MortgageCalculator"
+    tools:showIn="@layout/activity_mortgage_calculator"
+    android:background="#88f3ec">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mortgage Calculator"
+        android:id="@+id/textView2" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/amount"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="44dp"
+        android:hint="Enter Amount Borrowed"
+        android:textColor="#ffffff" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/interestRate"
+        android:layout_marginTop="37dp"
+        android:hint="Enter Interest Rate"
+        android:layout_below="@+id/amount"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Loan Term  in years: "
+        android:id="@+id/loanTerm"
+        android:hint="Loan Term"
+        android:layout_below="@+id/interestRate"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="47dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tax &amp; Insurance:"
+        android:id="@+id/textView_TaxInsurance"
+        android:layout_marginTop="27dp"
+        android:layout_below="@+id/radioGroup"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0.1%"
+        android:id="@+id/checkTax"
+        android:layout_alignTop="@+id/textView_TaxInsurance"
+        android:layout_toRightOf="@+id/loanTerm"
+        android:layout_toEndOf="@+id/loanTerm" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculate"
+        android:id="@+id/button_calculate"
+        android:layout_marginTop="22dp"
+        android:layout_below="@+id/checkTax"
+        android:layout_alignRight="@+id/textView2"
+        android:layout_alignEnd="@+id/textView2"
+        android:background="#ffffff"
+        android:textColor="#d62e04" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Monthly Payment"
+        android:id="@+id/monthlyPayment"
+        android:layout_below="@+id/button_calculate"
+        android:layout_alignLeft="@+id/button_calculate"
+        android:layout_alignStart="@+id/button_calculate"
+        android:layout_marginTop="21dp" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/radioGroup"
+        android:layout_below="@+id/loanTerm"
+        android:layout_marginTop="20dp"
+        android:layout_alignRight="@+id/amount"
+        android:layout_alignEnd="@+id/amount">
+
+
+
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="15"
+        android:id="@+id/radioButton2"
+        android:layout_above="@+id/checkBox_Tax"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="23dp"
+        android:layout_marginStart="23dp" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="7"
+        android:id="@+id/radioButton"
+        android:layout_alignTop="@+id/radioButton2"
+        android:layout_alignRight="@+id/textView"
+        android:layout_alignEnd="@+id/textView" />
+
+    <RadioButton
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="30"
+    android:id="@+id/radioButton3"
+    android:enabled="true"
+        android:checked="true"
+        android:layout_alignTop="@+id/radioButton"
+        android:layout_centerHorizontal="true" />
+    </RadioGroup>
+</RelativeLayout>
