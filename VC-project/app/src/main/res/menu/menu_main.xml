@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/account"
+        android:orderInCategory="160"
+        android:title="My Account"/>
+    <item
+        android:id="@+id/invitefriends"
+        android:orderInCategory="120"
+        android:title="Invite friends"/>
+    <item
+        android:id="@+id/about"
+        android:orderInCategory="120"
+        android:title="About VC"/>
+
+    <item
+        android:id="@+id/addevent"
+        android:orderInCategory="120"
+        android:title="Add Event"/>
+
+</menu>
